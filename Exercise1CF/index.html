@@ -16,7 +16,7 @@
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
 </head>
 
-<body style="background-image: url('../Images/mathbackground.jpg')">
+<body style="background-image: url('../Images/mathbackground.jpg'); background-size:auto;">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
         <div class="container">
@@ -35,31 +35,32 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container rounded-bottom text-white" style="padding-bottom:250px;">
+    <div class="container text-white" style="padding-bottom:250px;">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5 h1">Please Enter 5 numbers:</h1>
                 <h5 class="mt-1 h5">This will calculate and return the least, greatest, mean, sum, and product of your numbers.</h5>
+                <br />
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm">
                         <input type="number" id="input1" class="shadow-lg" />
                     </div>
-                    <div class="col">
+                    <div class="col-sm">
                         <input type="number" id="input2" class="shadow-lg" />
                     </div>
-                    <div class="col">
+                    <div class="col-sm">
                         <input type="number" id="input3" class="shadow-lg" />
                     </div>
-                    <div class="col">
+                    <div class="col-sm">
                         <input type="number" id="input4" class="shadow-lg" />
                     </div>
-                    <div class="col">
+                    <div class="col-sm">
                         <input type="number" id="input5" class="shadow-lg" />
                     </div>
                 </div>
                 <br />
                 <div class="col">
-                    <input type="submit" class="shadow-lg" onclick="populateNumArr(); least(); greatest(); sum(); mean(); product();" id="calcButton" />
+                    <input type="submit" class="shadow-lg btn-success" onclick="populateNumArr(); least(); greatest(); sum(); mean(); product();" id="calcButton" />
                 </div>
                 <br />
                 <div class="col">
